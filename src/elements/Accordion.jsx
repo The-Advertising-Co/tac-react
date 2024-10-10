@@ -17,23 +17,23 @@ class Accordion01 extends Component {
                 <AccordionItem >
                     <AccordionItemHeading>
                         <AccordionItemButton>
-                            Your Business Skills But Never Stop Improving.
+                        Social Media Marketing
                         </AccordionItemButton>
                     </AccordionItemHeading>
                     <AccordionItemPanel>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi doloribus eaque error est explicabo facilis fugit incidunt iste iure non nostrum officia, perspiciatis quidem quisquam rerum.</p>
+                        <p>Expert management of organic and paid social media strategies to engage audiences and drive measurable success.</p>
                     </AccordionItemPanel>
                 </AccordionItem>
 
                 <AccordionItem>
                     <AccordionItemHeading>
                         <AccordionItemButton>
-                            Tactics That Can Help Your Business Grow.
+                        Pay-Per-Click (PPC)
                         </AccordionItemButton>
                     </AccordionItemHeading>
                     <AccordionItemPanel>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, porro, rerum. A amet, dolorum esse laboriosam Accusantium cum laborum nulla possimus. Repellat!
+                        Strategic PPC campaigns designed to drive targeted traffic and maximise return on investment.
                         </p>
                     </AccordionItemPanel>
                 </AccordionItem>
@@ -41,12 +41,12 @@ class Accordion01 extends Component {
                 <AccordionItem>
                     <AccordionItemHeading>
                         <AccordionItemButton>
-                            The Secret of Successful Business
+                            Website Design
                         </AccordionItemButton>
                     </AccordionItemHeading>
                     <AccordionItemPanel>
                         <p>
-                            Ad aliquam dicta enim excepturi explicabo in ipsum iste iure natus perferendis placeat quae similique tempore totam veniam vero!
+                        Development of visually appealing, user-friendly websites that effectively convey the brand’s message and increase customer conversion rates.
                         </p>
                     </AccordionItemPanel>
                 </AccordionItem>
@@ -54,12 +54,12 @@ class Accordion01 extends Component {
                 <AccordionItem>
                     <AccordionItemHeading>
                         <AccordionItemButton>
-                            How To Start A Business With Business
+                        Creative Design
                         </AccordionItemButton>
                     </AccordionItemHeading>
                     <AccordionItemPanel>
                         <p>
-                            Facilis fugiat hic ipsam iusto laudantium libero maiores minima molestiae mollitia repellat rerum sunt ullam voluptates? Perferendis, suscipit.
+                        Crafting unique visual identities and compelling graphics that captivate and distinguish brands in the competitive market.
                         </p>
                     </AccordionItemPanel>
                 </AccordionItem>

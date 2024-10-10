@@ -3,15 +3,15 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
 
-import portfolio1 from "../../assets/images/portfolio/big/dp-big--portfolio-01.jpg";
-import portfolio2 from "../../assets/images/portfolio/big/dp-big--portfolio-02.jpg";
-import portfolio3 from "../../assets/images/portfolio/big/dp-big--portfolio-03.jpg";
-import portfolio4 from "../../assets/images/portfolio/big/dp-big--portfolio-04.jpg";
-import portfolio5 from "../../assets/images/portfolio/big/dp-big--portfolio-05.jpg";
-import portfolio6 from "../../assets/images/portfolio/big/dp-big--portfolio-06.jpg";
-import portfolio7 from "../../assets/images/portfolio/big/dp-big--portfolio-07.jpg";
-import portfolio8 from "../../assets/images/portfolio/big/dp-big--portfolio-08.jpg";
-import portfolio9 from "../../assets/images/portfolio/big/dp-big--portfolio-09.jpg";
+import portfolio1 from "../../assets/images/portfolio/web.png";
+import portfolio2 from "../../assets/images/portfolio/ppc.png";
+import portfolio3 from "../../assets/images/portfolio/ads.png";
+import portfolio4 from "../../assets/images/portfolio/email.png";
+import portfolio5 from "../../assets/images/portfolio/design.png";
+import portfolio6 from "../../assets/images/portfolio/seo.png";
+import portfolio7 from "../../assets/images/portfolio/big/dp-portfolio-07.jpg";
+import portfolio8 from "../../assets/images/portfolio/big/dp-portfolio-08.jpg";
+import portfolio9 from "../../assets/images/portfolio/big/dp-portfolio-09.jpg";
 import portfolio10 from "../../assets/images/portfolio/big/dp-big--portfolio-10.jpg";
 import portfolio11 from "../../assets/images/portfolio/big/dp-big--portfolio-11.jpg";
 
@@ -19,174 +19,47 @@ const TabOne = [
   {
     image: portfolio1,
     bigImage: portfolio1,
-    category: "Web Design",
-    title: "Design is a creative part",
+    category: "Create a professional and user-friendly website.",
+    title: "Web Design & Development",
+    link: "/services/web-design", // Add individual link
   },
   {
     image: portfolio2,
     bigImage: portfolio2,
-    category: "Mobile App",
-    title: "The service provide for designer",
+    category: "Boost your visibility and traffic with targeted PPC ads.",
+    title: "Pay Per Click (PPC)",
+    link: "/services/mobile-app", // Add individual link
   },
   {
     image: portfolio3,
     bigImage: portfolio3,
-    category: "Web Design",
-    title: "Mobile App landing Design",
+    category: "Increase brand visibility and engagement on social media with tailored content.",
+    title: "Social Media Marketing",
+    link: "/services/mobile-app-landing", // Add individual link
   },
   {
     image: portfolio4,
     bigImage: portfolio4,
-    category: "Mobile App",
-    title: "Logo Design creativity",
+    category: "Reach your audience with personalised email campaigns designed to boost engagement.",
+    title: "Email Marketing",
+    link: "/services/logo-design", // Add individual link
   },
   {
     image: portfolio5,
     bigImage: portfolio5,
-    category: "Web Design",
-    title: "T-shirt design is the part of design",
+    category: "Enhance your brand with impactful design services and complete branding.",
+    title: "Creative Design",
+    link: "/services/t-shirt-design", // Add individual link
   },
   {
     image: portfolio6,
     bigImage: portfolio6,
-    category: "Logo Design",
-    title: "Getting tickets to the big show",
+    category: "Improve your search engine rankings and attract more organic traffic.",
+    title: "Search Engine Optimisation",
+    link: "/services/logo-design-tickets", // Add individual link
   },
-  {
-    image: portfolio7,
-    bigImage: portfolio7,
-    category: "Freelancer",
-    title: "Getting tickets to the big show",
-  },
-  {
-    image: portfolio8,
-    bigImage: portfolio8,
-    category: "Logo Designer",
-    title: "Getting tickets to the big show",
-  },
-  {
-    image: portfolio9,
-    bigImage: portfolio9,
-    category: "Logo Designer",
-    title: "Getting tickets to the big show",
-  },
-];
-
-const TabTwo = [
-  {
-    image: portfolio6,
-    bigImage: portfolio6,
-    category: "Logo Design",
-    title: "Logo design is the main part for a designer",
-  },
-  {
-    image: portfolio7,
-    bigImage: portfolio7,
-    category: "Freelancer",
-    title: "Getting tickets to the big show",
-  },
-  {
-    image: portfolio8,
-    bigImage: portfolio8,
-    category: "App Landing",
-    title: "Mobile App landign is a landing page design",
-  },
-  {
-    image: portfolio9,
-    bigImage: portfolio9,
-    category: "Dasboard",
-    title: "Dasboard design is the main part for data management",
-  },
-  {
-    image: portfolio10,
-    bigImage: portfolio10,
-    category: "T-shirt Design",
-    title: "T-shirt design is the popular design for digital market",
-  },
-  {
-    image: portfolio11,
-    bigImage: portfolio11,
-    category: "Logo Designer",
-    title: "Getting tickets to the big show",
-  },
-];
-
-const TabThree = [
-  {
-    image: portfolio4,
-    bigImage: portfolio4,
-    category: "Mobile App",
-    title: "Getting tickets to the big show",
-  },
-  {
-    image: portfolio5,
-    bigImage: portfolio5,
-    category: "Web Design",
-    title: "Getting tickets to the big show",
-  },
-  {
-    image: portfolio6,
-    bigImage: portfolio6,
-    category: "Logo Design",
-    title: "Getting tickets to the big show",
-  },
-  {
-    image: portfolio7,
-    bigImage: portfolio7,
-    category: "Freelancer",
-    title: "Getting tickets to the big show",
-  },
-  {
-    image: portfolio8,
-    bigImage: portfolio8,
-    category: "Freelancer",
-    title: "Getting tickets to the big show",
-  },
-  {
-    image: portfolio9,
-    bigImage: portfolio9,
-    category: "Freelancer",
-    title: "Getting tickets to the big show",
-  },
-];
-
-const TabFour = [
-  {
-    image: portfolio6,
-    bigImage: portfolio6,
-    category: "Logo Design",
-    title: "Getting tickets to the big show",
-  },
-  {
-    image: portfolio7,
-    bigImage: portfolio7,
-    category: "Freelancer",
-    title: "Getting tickets to the big show",
-  },
-  {
-    image: portfolio8,
-    bigImage: portfolio8,
-    category: "Logo Designer",
-    title: "Getting tickets to the big show",
-  },
-  {
-    image: portfolio9,
-    bigImage: portfolio9,
-    category: "Freelancer",
-    title: "Getting tickets to the big show",
-  },
-  {
-    image: portfolio10,
-    bigImage: portfolio10,
-    category: "Logo Designer",
-    title: "Getting tickets to the big show",
-  },
-  {
-    image: portfolio11,
-    bigImage: portfolio11,
-    category: "Logo Designer",
-    title: "Getting tickets to the big show",
-  },
+  
+ 
 ];
 
 class TabStyleThree extends Component {
@@ -194,15 +67,14 @@ class TabStyleThree extends Component {
     super(props);
     this.state = {
       tab1: 0,
-      tab2: 0,
-      tab3: 0,
-      tab4: 0,
       isOpen: false,
     };
   }
+
   render() {
     const { column } = this.props;
-    const { tab1, tab2, tab3, tab4, isOpen } = this.state;
+    const { tab1, isOpen } = this.state;
+
     return (
       <div>
         <Tabs>
@@ -211,16 +83,16 @@ class TabStyleThree extends Component {
               <div className="tablist-inner">
                 <TabList className="pv-tab-button text-center mt--0">
                   <Tab>
-                    <span>All Project</span>
+                    <span>All Services</span>
                   </Tab>
                   <Tab>
                     <span>Web Design</span>
                   </Tab>
                   <Tab>
-                    <span>Logo Design</span>
+                    <span>Branding</span>
                   </Tab>
                   <Tab>
-                    <span>Mobile App</span>
+                    <span>Digital Marketing</span>
                   </Tab>
                 </TabList>
               </div>
@@ -257,171 +129,17 @@ class TabStyleThree extends Component {
                     <div className="portfolio-static">
                       <div className="thumbnail-inner">
                         <div className="thumbnail">
-                          <a href="#portfolio-details">
+                          <a href={value.link}>
                             <img src={value.image} alt="Portfolio Images" />
                           </a>
                         </div>
                       </div>
                       <div className="content">
                         <div className="inner">
-                          <p>{value.category}</p>
                           <h4>
-                            <a href="#portfolio-details">{value.title}</a>
+                            <a href={value.link}>{value.title}</a>
                           </h4>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </TabPanel>
-
-          <TabPanel className="row row--35">
-            {TabTwo.map((value, index) => (
-              <div className={`${column}`} key={index}>
-                {isOpen && (
-                  <Lightbox
-                    mainSrc={TabTwo[tab2].bigImage}
-                    nextSrc={TabTwo[(tab2 + 1) % TabTwo.length]}
-                    prevSrc={TabTwo[(tab2 + TabTwo.length - 1) % TabTwo.length]}
-                    onCloseRequest={() => this.setState({ isOpen: false })}
-                    onMovePrevRequest={() =>
-                      this.setState({
-                        tab2: (tab2 + TabTwo.length - 1) % TabTwo.length,
-                      })
-                    }
-                    onMoveNextRequest={() =>
-                      this.setState({
-                        tab2: (tab2 + 1) % TabTwo.length,
-                      })
-                    }
-                    imageLoadErrorMessage="Image Loading ..."
-                    enableZoom={false}
-                  />
-                )}
-                <div className="item-portfolio-static">
-                  <div
-                    onClick={() => this.setState({ isOpen: true, tab2: index })}
-                  >
-                    <div className="portfolio-static">
-                      <div className="thumbnail-inner">
-                        <div className="thumbnail">
-                          <a href="#portfolio-details">
-                            <img src={value.image} alt="Portfolio Images" />
-                          </a>
-                        </div>
-                      </div>
-                      <div className="content">
-                        <div className="inner">
-                          <p>{value.category}</p>
-                          <h4>
-                            <a href="#portfolio-details">{value.title}</a>
-                          </h4>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </TabPanel>
-
-          <TabPanel className="row row--35">
-            {TabThree.map((value, index) => (
-              <div className={`${column}`} key={index}>
-                {isOpen && (
-                  <Lightbox
-                    mainSrc={TabThree[tab3].bigImage}
-                    nextSrc={TabThree[(tab3 + 1) % TabThree.length]}
-                    prevSrc={
-                      TabThree[(tab3 + TabThree.length - 1) % TabThree.length]
-                    }
-                    onCloseRequest={() => this.setState({ isOpen: false })}
-                    onMovePrevRequest={() =>
-                      this.setState({
-                        tab3: (tab3 + TabThree.length - 1) % TabThree.length,
-                      })
-                    }
-                    onMoveNextRequest={() =>
-                      this.setState({
-                        tab3: (tab3 + 1) % TabThree.length,
-                      })
-                    }
-                    imageLoadErrorMessage="Image Loading ..."
-                    enableZoom={false}
-                  />
-                )}
-                <div className="item-portfolio-static">
-                  <div
-                    onClick={() => this.setState({ isOpen: true, tab3: index })}
-                  >
-                    <div className="portfolio-static">
-                      <div className="thumbnail-inner">
-                        <div className="thumbnail">
-                          <a href="#portfolio-details">
-                            <img src={value.image} alt="Portfolio Images" />
-                          </a>
-                        </div>
-                      </div>
-                      <div className="content">
-                        <div className="inner">
-                          <p>{value.category}</p>
-                          <h4>
-                            <a href="#portfolio-details">{value.title}</a>
-                          </h4>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </TabPanel>
-
-          <TabPanel className="row row--35">
-            {TabFour.map((value, index) => (
-              <div className={`${column}`} key={index}>
-                {isOpen && (
-                  <Lightbox
-                    mainSrc={TabFour[tab4].bigImage}
-                    nextSrc={TabFour[(tab4 + 1) % TabFour.length]}
-                    prevSrc={
-                      TabFour[(tab4 + TabFour.length - 1) % TabFour.length]
-                    }
-                    onCloseRequest={() => this.setState({ isOpen: false })}
-                    onMovePrevRequest={() =>
-                      this.setState({
-                        tab4: (tab4 + TabFour.length - 1) % TabFour.length,
-                      })
-                    }
-                    onMoveNextRequest={() =>
-                      this.setState({
-                        tab4: (tab4 + 1) % TabFour.length,
-                      })
-                    }
-                    imageLoadErrorMessage="Image Loading ..."
-                    enableZoom={false}
-                  />
-                )}
-                <div className="item-portfolio-static">
-                  <div
-                    onClick={() => this.setState({ isOpen: true, tab4: index })}
-                  >
-                    <div className="portfolio-static">
-                      <div className="thumbnail-inner">
-                        <div className="thumbnail">
-                          <a href="#portfolio-details">
-                            <img src={value.image} alt="Portfolio Images" />
-                          </a>
-                        </div>
-                      </div>
-                      <div className="content">
-                        <div className="inner">
-                          <p>{value.category}</p>
-                          <h4>
-                            <a href="#portfolio-details">{value.title}</a>
-                          </h4>
+                          <p>{value.category}</p> {/* Category moved to the bottom */}
                         </div>
                       </div>
                     </div>

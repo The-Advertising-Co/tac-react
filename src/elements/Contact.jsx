@@ -57,6 +57,7 @@ class Contact extends Component{
                                     <div className="inner">
                                         <h4 className="title">Phone Number</h4>
                                         <p><a href="tel:+61 0430 799 235">+61 0430 799 235</a></p>
+                                        <p><a href="tel:+61 0430 799 235">+61 0430 799 235</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -70,7 +71,8 @@ class Contact extends Component{
                                     </div>
                                     <div className="inner">
                                         <h4 className="title">Email Address</h4>
-                                        <p><a href="mailto:support@theadvertisingcompany.com">support@theadvertisingcompany.com</a></p>
+                                        <p><a href="mailto:support@theadvertisingcompany.com">info@theadvertisingcompany.com</a></p>
+                                        <p><a href="mailto:support@theadvertisingcompany.com">admin@theadvertisingcompany.com</a></p>
                                     </div>
                                 </div>
                             </div>

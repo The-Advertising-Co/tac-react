@@ -16,8 +16,12 @@ import CallAction from "../elements/callaction/CallAction";
 import TabOne from "../elements/tab/TabOne";
 import Helmet from "../component/common/Helmet";
 import CounterOne from "../elements/counters/CounterOne";
+import Accordion01 from "../elements/Accordion";
+import TabThree from "../elements/tab/TabThree";
+import FeaturedInSection from "../component/common/FeaturedInSection";
 
 import about from "../assets/images/about/about-3.jpg";
+import about2 from "../assets/images/about/about-4.png";
 
 const SlideList = [
   {
@@ -103,11 +107,11 @@ class DigitalAgency extends Component {
                           )}
                           {value.buttonText ? (
                             <div className="slide-btn">
+                              
                               <a
-                                className="rn-button-style--2 btn-primary-color"
-                                href={`${value.buttonLink}`}
-                              >
-                                {value.buttonText}
+                                className="rn-button-style--2 btn-solid"
+                                href="/contact">
+                                  <span>Contact Us</span>
                               </a>
                             </div>
                           ) : (
@@ -123,27 +127,62 @@ class DigitalAgency extends Component {
           </div>
         </div>
         {/* End Slider Area   */}
-
-        {/* Start Service Area  */}
-        <div className="service-area pt--120 pb--50 bg_color--1">
+        {/* Start About Area  */}
+        <div className="rn-about-area ptb--120 bg_color--5">
           <div className="container">
-            <div className="row">
+            <div className="row row--35 align-items-center">
+              <div className="col-lg-6">
+                <div className="thumbnail">
+                  <img
+                    className="w-100"
+                    src={about2}
+                    alt="About Images"
+                  />
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div className="about-inner inner">
+                  <div className="section-title">
+                    <h2 className="title">Company Overview.</h2>
+                    <p>
+                    The Advertising Company is dedicated to delivering digital marketing excellence and 
+                    impactful creative designs. We aim to empower businesses to achieve measurable 
+                    growth in sales, enhanced online presence, lead generation, and brand development.
+                    </p>
+                  </div>
+                  <div className="accordion-wrapper mt--30">
+                    <Accordion01 />
+                  </div>
+                  <div className="about-button mt--50">
+                    <a className="rn-button-style--2 btn-solid" href="/about">
+                      Learn More
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* End About Area  */}
+
+        <FeaturedInSection />
+        {/* Start Designer Portfolio  */}
+      <div className="designer-portfolio-area ptb--120 bg_color--1">
+          <div className="row">
               <div className="col-lg-12">
                 <div className="section-title text-center service-style--3 mb--30">
-                  <h2 className="title">Our Service</h2>
+                  <h2 className="title">Our Services</h2>
                   <p>
-                  Discover innovative advertising strategies that connect with your audience and elevate your brand above the competition.
+                    Discover innovative advertising strategies that connect with your audience and elevate your brand above the competition.
                   </p>
                 </div>
               </div>
             </div>
-            <ServiceList
-              item="6"
-              column="col-lg-4 col-md-6 col-sm-6 col-12 text-center"
-            />
-          </div>
+          <div className="wrapper plr--70 plr_sm--30 plr_md--30">
+          <TabThree column="col-lg-4 col-md-6 col-sm-6 col-12" />
         </div>
-        {/* End Service Area  */}
+      </div>
+      {/* End Designer Portfolio  */}
 
         {/* Start Portfolio Area */}
         <div className="portfolio-area ptb--120 bg_image bg_image--3">
@@ -171,8 +210,7 @@ class DigitalAgency extends Component {
                   <div className="view-more-btn mt--60 text-center">
                     <a
                       className="rn-button-style--2 btn-solid"
-                      href="/portfolio"
-                    >
+                      href="/portfolio">
                       <span>View More</span>
                     </a>
                   </div>

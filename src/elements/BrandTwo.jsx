@@ -27,6 +27,18 @@ class BrandTwo extends Component {
           <li>
             <img src={brand5} alt="Logo Images" />
           </li>
+          <li>
+            <img src={brand5} alt="Logo Images" />
+          </li>
+          <li>
+            <img src={brand5} alt="Logo Images" />
+          </li>
+          <li>
+            <img src={brand5} alt="Logo Images" />
+          </li>
+          <li>
+            <img src={brand5} alt="Logo Images" />
+          </li>
         </ul>
       </React.Fragment>
     );

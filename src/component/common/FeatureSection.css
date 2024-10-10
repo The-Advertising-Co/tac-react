@@ -1,0 +1,91 @@
+/* src/FeatureSection.css */
+
+/* Container styling */
+.section-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #feca00; /* Yellow background */
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+  }
+  
+  /* Feature Item styling */
+  .feature-item {
+    text-align: center;
+    background-color: #000;
+    padding: 30px;
+    border-radius: 8px;
+    color: #fff;
+    max-width: 300px;
+    margin: 20px; /* Spacing between items */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    flex: 1; /* Flex property to adjust size dynamically */
+    min-width: 250px; /* Ensures a minimum width on smaller screens */
+  }
+  
+  /* Hover effect */
+  .feature-item-hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+  }
+  
+  /* Icon Styling */
+  .icon {
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  /* Title and description styling */
+  .title {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .description {
+    font-size: 1em;
+    color: #fff;
+  }
+  
+  /* Responsive media queries */
+  
+  /* For smaller screens such as tablets */
+  @media (max-width: 768px) {
+    .section-container {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center;
+    }
+    
+    .feature-item {
+      width: 80%; /* Feature items take up more space on smaller screens */
+    }
+  }
+  
+  /* For very small screens such as mobile devices */
+  @media (max-width: 480px) {
+    .section-container {
+      padding: 30px;
+    }
+  
+    .feature-item {
+      width: 100%; /* Feature items fill the width */
+      padding: 20px;
+    }
+  
+    .title {
+      font-size: 1.4em;
+    }
+  
+    .description {
+      font-size: 0.9em;
+    }
+  
+    .icon {
+      width: 60px;
+    }
+  }
+  
