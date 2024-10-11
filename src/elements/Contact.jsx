@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import PageHelmet from "../component/common/Helmet";
-import { FiHeadphones , FiMail , FiMapPin } from "react-icons/fi";
-import GoogleMapReact from 'google-map-react';
+import { FiHeadphones, FiMail, FiMapPin, FiGlobe } from "react-icons/fi";
 import ContactTwo from "../elements/contact/ContactTwo";
 import BrandTwo from "../elements/BrandTwo";
 import ScrollToTop from 'react-scroll-up';
@@ -9,26 +8,16 @@ import { FiChevronUp } from "react-icons/fi";
 import Header from "../component/header/Header";
 import Footer from "../component/footer/Footer";
 
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
-
-class Contact extends Component{
-    static defaultProps = {
-        center: {
-            lat: 59.95,
-            lng: 30.33
-        },
-        zoom: 11
-    };
-
-    render(){
-        return(
+class Contact extends Component {
+    render() {
+        return (
             <React.Fragment>
                 <PageHelmet pageTitle='Contact' />
 
                 <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
 
-                 {/* Start Breadcrump Area */}
-                 <div className="rn-page-title-area pt--120 pb--190 bg_image bg_image--17"  data-black-overlay="6">
+                {/* Start Breadcrump Area */}
+                <div className="rn-page-title-area pt--120 pb--190 bg_image bg_image--17" data-black-overlay="6">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
@@ -42,85 +31,102 @@ class Contact extends Component{
                 </div>
                 {/* End Breadcrump Area */}
 
-
-                {/* Start Contact Top Area  */}
-                <div className="rn-contact-top-area ptb--120 bg_color--5">
+                {/* Start About Us Section */}
+                <div className="rn-about-us-area ptb--80 bg_color--1">
                     <div className="container">
-                       
                         <div className="row">
-                            {/* Start Single Address  */}
-                            <div className="col-lg-4 col-md-6 col-sm-6 col-12">
-                                <div className="rn-address">
-                                    <div className="icon">
-                                        <FiHeadphones />
-                                    </div>
-                                    <div className="inner">
-                                        <h4 className="title">Phone Number</h4>
-                                        <p><a href="tel:+61 0430 799 235">+61 0430 799 235</a></p>
-                                        <p><a href="tel:+61 0430 799 235">+61 0430 799 235</a></p>
-                                    </div>
+                            <div className="col-lg-12">
+                                <div className="about-us-content text-center">
+                                    <h3>About Us</h3>
+                                    <p>
+                                        We are The Advertising Company, specializing in digital marketing strategies that help businesses grow. Our expertise spans across professional website design, social media reach, and Google Search campaigns to help you get the best out of your advertising budget.
+                                    </p>
+                                    <p>
+                                        Our mission is to enhance your online presence and drive real results for your business. With a team of specialists ready to assist, we will ensure that your brand reaches its full potential.
+                                    </p>
                                 </div>
                             </div>
-                            {/* End Single Address  */}
-
-                            {/* Start Single Address  */}
-                            <div className="col-lg-4 col-md-6 col-sm-6 col-12 mt_mobile--50">
-                                <div className="rn-address">
-                                    <div className="icon">
-                                        <FiMail />
-                                    </div>
-                                    <div className="inner">
-                                        <h4 className="title">Email Address</h4>
-                                        <p><a href="mailto:support@theadvertisingcompany.com">info@theadvertisingcompany.com</a></p>
-                                        <p><a href="mailto:support@theadvertisingcompany.com">admin@theadvertisingcompany.com</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* End Single Address  */}
-
-                            {/* Start Single Address  */}
-                            <div className="col-lg-4 col-md-6 col-sm-6 col-12 mt_md--50 mt_sm--50">
-                                <div className="rn-address">
-                                    <div className="icon">
-                                        <FiMapPin />
-                                    </div>
-                                    <div className="inner">
-                                        <h4 className="title">Location</h4>
-                                        <p>North Sydney <br /> New South Wales 2060, Australia</p>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* End Single Address  */}
-
                         </div>
                     </div>
                 </div>
-                {/* End Contact Top Area  */}
+                {/* End About Us Section */}
 
-                {/* Start Contact Page Area  */}
+                {/* Start Talk to a Specialist Area */}
+                <div style={{ backgroundColor: '#000', color: '#fff', padding: '60px 0' }}>
+                    <div className="container">
+                        <div className="row">
+                            {/* Left Column */}
+                            <div className="col-md-6">
+                                <h4 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px', color: '#fff' }}>
+    TALK TO A SPECIALIST
+</h4>
+
+                                <h2 style={{ fontSize: '36px', fontWeight: 'bold', marginBottom: '20px', color: '#fff' }}>Let's Talk Business</h2>
+                                <p style={{ fontSize: '18px', lineHeight: '1.6', marginBottom: '20px' }}>
+                                    At The Advertising Company, we specialize in digital marketing strategies that enhance your online presence and drive results.
+                                </p>
+                                <a href="/about" style={{
+                                    display: 'inline-block',
+                                    backgroundColor: '#fdd835',
+                                    color: '#000',
+                                    padding: '12px 24px',
+                                    fontWeight: 'bold',
+                                    textDecoration: 'none',
+                                    borderRadius: '4px'
+                                }}>ABOUT US</a>
+                            </div>
+
+                            {/* Right Column */}
+                            <div className="col-md-6">
+                                <div style={{
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    alignItems: 'flex-start',
+                                    gap: '20px',
+                                    fontSize: '18px'
+                                }}>
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                                        <FiHeadphones style={{ fontSize: '24px' }} />
+                                        <span>0430799235</span>
+                                    </div>
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                                        <FiMail style={{ fontSize: '24px' }} />
+                                        <span>support@theadvertisingcompany.com</span>
+                                    </div>
+                                    <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                                        <FiGlobe style={{ fontSize: '24px' }} />
+                                        <span>theadvertisingcompany.com</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/* End Talk to a Specialist Area */}
+
+                {/* Start Contact Page Area */}
                 <div className="rn-contact-page ptb--120 bg_color--1">
                     <ContactTwo />
                 </div>
-                {/* End Contact Page Area  */}
+                {/* End Contact Page Area */}
 
-                {/* Start Contact Map  */}
+                {/* Start Embedded Google Map */}
                 <div className="rn-contact-map-area position-relative">
-    <div style={{ height: '650px', width: '100%' }}>
-        <GoogleMapReact
-            bootstrapURLKeys={{ key: 'YOUR_GOOGLE_MAPS_API_KEY' }} // Add your API key here
-            defaultCenter={{ lat: -33.8688, lng: 151.2093 }} // Centered on Sydney, Australia
-            defaultZoom={this.props.zoom}
-        >
-            <AnyReactComponent
-                lat={-33.8688} // Latitude for Sydney
-                lng={151.2093} // Longitude for Sydney
-                text="Sydney"
-            />
-        </GoogleMapReact>
-    </div>
-</div>
-                {/* End Contact Map  */}
-                
+                    <div style={{ width: '100vw', height: '500px', marginLeft: 'calc(-50vw + 50%)' }}>
+                        <iframe
+                            title="Google Map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.884346719966!2d151.20182577539395!3d-33.86623477472233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae3bb2a7a26f%3A0xe8e2902c228c2084!2sThe%20Advertising%20Company!5e0!3m2!1sen!2sau!4v1696966338394!5m2!1sen!2sau"
+                            width="100%"
+                            height="500"
+                            frameBorder="0"
+                            style={{ border: 0 }}
+                            allowFullScreen=""
+                            aria-hidden="false"
+                            tabIndex="0"
+                        />
+                    </div>
+                </div>
+                {/* End Embedded Google Map */}
 
                 {/* Start Brand Area */}
                 <div className="rn-brand-area brand-separation bg_color--5 ptb--120">
@@ -141,11 +147,11 @@ class Contact extends Component{
                     </ScrollToTop>
                 </div>
                 {/* End Back To Top */}
-                
+
                 <Footer />
-                
             </React.Fragment>
-        )
+        );
     }
 }
-export default Contact
+
+export default Contact;
