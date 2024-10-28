@@ -47,9 +47,9 @@ class Service extends Component {
                 <PageHelmet pageTitle="Service" />
                 <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
 
-                {/* Start Breadcrump Area */}
+                {/* Start Breadcrumb Area */}
                 <Breadcrumb title={'Service'} />
-                {/* End Breadcrump Area */}
+                {/* End Breadcrumb Area */}
 
                 {/* Start Service Area */}
                 <div className="service-area ptb--120 bg_color--5">
@@ -64,6 +64,8 @@ class Service extends Component {
                                 </div>
                             </div>
                         </div>
+
+                        {/* Service Items */}
                         <div className="row service-one-wrapper">
                             {ServiceList.map((val, i) => (
                                 <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12" key={i}>
@@ -81,13 +83,15 @@ class Service extends Component {
                                 </div>
                             ))}
                         </div>
+
+                        {/* SEO Analysis Section */}
+                        <div className="row service-one-wrapper mt--50">
+                            <SEOAnalysisSection />
+                        </div>
                     </div>
                 </div>
                 {/* End Service Area */}
 
-                {/* SEO Analysis Section */}
-                <SEOAnalysisSection />
-                
                 {/* Start Back To Top */}
                 <div className="backto-top">
                     <ScrollToTop showUnder={160}>
