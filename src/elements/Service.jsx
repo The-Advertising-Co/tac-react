@@ -5,7 +5,6 @@ import { FiCast, FiLayers, FiUsers, FiMonitor, FiChevronUp } from "react-icons/f
 import ScrollToTop from 'react-scroll-up';
 import Header from "../component/header/Header";
 import Footer from "../component/footer/Footer";
-import SEOAnalysisSection from "./SEOAnalysisSection"; // Import the new section
 
 const ServiceList = [
     {
@@ -83,10 +82,7 @@ class Service extends Component {
                         </div>
                     </div>
                 </div>
-                {/* End Service Area */}
-
-                {/* SEO Analysis Section */}
-                <SEOAnalysisSection />
+                {/* End Service Area */}`
                 
                 {/* Start Back To Top */}
                 <div className="backto-top">
