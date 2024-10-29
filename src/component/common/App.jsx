@@ -1,12 +1,12 @@
 import React, { Component, Fragment } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
 import SocialMedia from "../elements/social-media";
-import PayPerClick from "../elements/pay-per-click"; 
-import WebDesignAndSEO from "../elements/web-design-and-seo"; 
+import PayPerClick from "../elements/pay-per-click";
+import WebDesignAndSEO from "../elements/web-design-and-seo";
 import GraphicDesign from "../elements/graphic-design";
 import EmailMarketing from "../elements/email-marketing";
 import Home from "../pages/Home";
