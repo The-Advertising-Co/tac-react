@@ -11,35 +11,31 @@ import logoSymbolLight from "../../assets/images/logo/logo-symbol-light.png";
 class Header extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      isMenuOpen: false,
+      isDropdownOpen: false,
+    };
     this.menuTrigger = this.menuTrigger.bind(this);
     this.CLoseMenuTrigger = this.CLoseMenuTrigger.bind(this);
-    //  this.subMetuTrigger = this.subMetuTrigger.bind(this);
-    window.addEventListener("load", function () {
-      console.log("All assets are loaded");
-    });
+    this.toggleDropdown = this.toggleDropdown.bind(this);
   }
 
   menuTrigger() {
-    document.querySelector(".header-wrapper").classList.toggle("menu-open");
+    this.setState({ isMenuOpen: !this.state.isMenuOpen });
   }
 
   CLoseMenuTrigger() {
-    document.querySelector(".header-wrapper").classList.remove("menu-open");
+    this.setState({ isMenuOpen: false });
+  }
+
+  toggleDropdown() {
+    this.setState({ isDropdownOpen: !this.state.isDropdownOpen });
   }
 
   render() {
-    var elements = document.querySelectorAll(".has-droupdown > a");
-    for (var i in elements) {
-      if (elements.hasOwnProperty(i)) {
-        elements[i].onclick = function () {
-          this.parentElement
-            .querySelector(".submenu")
-            .classList.toggle("active");
-          this.classList.toggle("open");
-        };
-      }
-    }
     const { logo, color = "default-color" } = this.props;
+    const { isDropdownOpen } = this.state;
+
     let logoUrl;
     if (logo === "light") {
       logoUrl = <img src={logoLight} alt="Digital Agency" />;
@@ -54,68 +50,47 @@ class Header extends Component {
     }
 
     return (
-      <header
-        className={`header-area formobile-menu header--transparent ${color}`}
-      >
+      <header className={`header-area formobile-menu header--transparent ${color}`}>
         <div className="header-wrapper" id="header-wrapper">
           <div className="header-left">
             <div className="logo">
-              <a href="/">{logoUrl}</a>
+              <Link to="/">{logoUrl}</Link>
             </div>
           </div>
           <div className="header-right">
             <nav className="mainmenunav d-lg-block">
               <ul className="mainmenu">
                 <li className="has-droupdown">
-                  <Link to="/">Home</Link>                  
+                  <Link to="/">Home</Link>
                 </li>
                 <li className="has-droupdown">
-                  <Link to="/#">Service</Link>
-                  <ul className="submenu">
-                    <li>
-                      <Link to="/SocialMedia">Social Media</Link>
-                    </li>
-                    <li>
-                      <Link to="/service-details">Pay Per Click</Link>
-                    </li>
-                    <li>
-                      <Link to="/service-details">Website Design And SEO</Link>
-                    </li>
-                    <li>
-                      <Link to="/service-details">Graphic Design</Link>
-                    </li>
-                    <li>
-                      <Link to="/service-details">Email Marketing</Link>
-                    </li>
+                  <Link to="#" onClick={this.toggleDropdown}>
+                    Service
+                  </Link>
+                  <ul className={`submenu ${isDropdownOpen ? "active" : ""}`}>
+                    <li><Link to="/social-media">Social Media</Link></li>
+                    <li><Link to="/pay-per-click">Pay Per Click</Link></li>
+                    <li><Link to="/web-design-and-seo">Website Design And SEO</Link></li>
+                    <li><Link to="/graphic-design">Graphic Design</Link></li>
+                    <li><Link to="/email-marketing">Email Marketing</Link></li>
                   </ul>
                 </li>
-                <li>
-                  <Link to="/about">About</Link>
-                </li>
-                
-                <li>
-                  <Link to="/contact">Contact</Link>
-                </li>
+                <li><Link to="/about">About</Link></li>
+                <li><Link to="/contact">Contact</Link></li>
               </ul>
             </nav>
             <div className="header-btn">
-              <a
-                className="rn-btn"
-                href="/contact"
-              >
+              <Link className="rn-btn" to="/contact">
                 <span>Get in touch</span>
-              </a>
+              </Link>
             </div>
-            {/* Start Humberger Menu  */}
+            {/* Start Hamburger Menu */}
             <div className="humberger-menu d-block d-lg-none pl--20">
-              <span
-                onClick={this.menuTrigger}
-                className="menutrigger text-white"
-              >
+              <span onClick={this.menuTrigger} className="menutrigger text-white">
                 <FiMenu />
               </span>
             </div>
-            {/* End Humberger Menu  */}
+            {/* End Hamburger Menu */}
             <div className="close-menu d-block d-lg-none">
               <span onClick={this.CLoseMenuTrigger} className="closeTrigger">
                 <FiX />
@@ -127,4 +102,5 @@ class Header extends Component {
     );
   }
 }
+
 export default Header;
