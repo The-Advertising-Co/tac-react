@@ -1,4 +1,7 @@
 import Home from "./Pages/Home";
+import About from "./elements/About";
+import Contact from "./elements/Contact";
+import Services from "./elements/Service";
 
 /**
  * Your application's routes definition.
@@ -12,6 +15,18 @@ export const routes = [
   {
     path: "",
     component: Home,
+  },
+  {
+    path: "about",
+    component: About,
+  },
+  {
+    path: "contact",
+    component: Contact,
+  },
+  {
+    path: "services",
+    component: Services,
   },
   // more routes here
 ];
